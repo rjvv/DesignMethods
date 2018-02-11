@@ -1,54 +1,54 @@
-<section class="category category--discover usa-section" id="discover">
+<section class="category category--empathize usa-section" id="empathize">
   <div class="usa-grid">
     <header class="category--header">
         <h1 class="category--title">Empathize</h1>
         <p class="category--subtitle">Methods to build empathy for the project and people involved.</p>
     </header>
-    {% for method in discover_methods %}
+    {% for method in empathize_methods %}
       {% include method.html method=method %}
     {% endfor %}
   </div>
 </section>
-<section class="category category--decide usa-section" id="decide">
+<section class="category category--define usa-section" id="define">
   <div class="usa-grid">
     <header class="category--header">
       <h1 class="category--title">Define</h1>
       <p class="category--subtitle">Methods for focusing the design effort.</p>
     </header>
-    {% for method in decide_methods %}
+    {% for method in define_methods %}
       {% include method.html method=method %}
     {% endfor %}
   </div>
 </section>
-<section class="category category--make usa-section" id="make">
+<section class="category category--ideate usa-section" id="ideate">
   <div class="usa-grid">
     <header class="category--header">
       <h1 class="category--title">Ideate</h1>
       <p class="category--subtitle">Methods for creating a testable solution.</p>
     </header>
-    {% for method in make_methods %}
+    {% for method in ideate_methods %}
       {% include method.html method=method %}
     {% endfor %}
   </div>
 </section>
-<section class="category category--validate usa-section" id="validate">
+<section class="category category--prototype usa-section" id="prototype">
   <div class="usa-grid">
     <header class="category--header">
       <h1 class="category--title">Prototype</h1>
       <p class="category--subtitle">Methods for testing a design hypothesis.</p>
     </header>
-    {% for method in validate_methods %}
+    {% for method in prototype_methods %}
       {% include method.html method=method %}
     {% endfor %}
   </div>
 </section>
-<section class="category category--fundamentals usa-section" id="fundamentals">
+<section class="category category--test usa-section" id="test">
   <div class="usa-grid">
     <header class="category--header">
       <h1 class="category--title">Test</h1>
       <p class="category--subtitle">Foundational methods for practicing design research.</p>
     </header>
-    {% for method in fundamentals_methods %}
+    {% for method in test_methods %}
       {% include method.html method=method %}
     {% endfor %}
   </div>

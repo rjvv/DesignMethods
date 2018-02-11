@@ -39,11 +39,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Empathize</span>
             </button>
             <ul id="side-nav-1" class="usa-nav-submenu" aria-hidden="true">
-              {% assign discovermethods = discover_methods | sort:"title"  %}
-              {% for method in discovermethods %}
+              {% assign empathizemethods = empathize_methods | sort:"title"  %}
+              {% for method in empathizemethods %}
                 <li><a href="{{ site.baseurl }}{{ method.url }}">{{ method.title }}</a></li>
               {% endfor %}
-              <li><a href="{{site.baseurl}}/discover">See all Discover cards</a></li>
+              <li><a href="{{site.baseurl}}/empathize">See all Empathize cards</a></li>
             </ul>
           </li>
           <li>
@@ -51,11 +51,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Define</span>
             </button>
             <ul id="sidenav-2" class="usa-nav-submenu" aria-hidden="true">
-              {% assign decidemethods = decide_methods | sort:"title"  %}
-              {% for method in decidemethods %}
+              {% assign definemethods = define_methods | sort:"title"  %}
+              {% for method in definemethods %}
                 <li><a href="{{ site.baseurl }}{{ method.url }}">{{ method.title }}</a></li>
               {% endfor %}
-                <li><a href="{{site.baseurl}}/decide">See all Decide cards</a></li>
+                <li><a href="{{site.baseurl}}/define">See all Define cards</a></li>
             </ul>
           </li>
           <li>
@@ -63,11 +63,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Ideate</span>
             </button>
             <ul id="sidenav-3" class="usa-nav-submenu" aria-hidden="true">
-              {% assign makemethods = make_methods | sort:"title"  %}
-              {% for method in makemethods %}
+              {% assign ideatemethods = ideate_methods | sort:"title"  %}
+              {% for method in ideatemethods %}
                 <li><a href="{{ site.baseurl }}{{ method.url }}">{{ method.title }}</a></li>
               {% endfor %}
-                <li><a href="{{site.baseurl}}/make">See all Make cards</a></li>
+                <li><a href="{{site.baseurl}}/ideate">See all Ideate cards</a></li>
             </ul>
           </li>
           <li>
@@ -75,11 +75,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Prototype</span>
             </button>
             <ul id="sidenav-4" class="usa-nav-submenu" aria-hidden="true">
-              {% assign validatemethods = validate_methods | sort:"title"  %}
-              {% for method in validatemethods %}
+              {% assign prototypemethods = prototype_methods | sort:"title"  %}
+              {% for method in prototypemethods %}
                 <li><a href="{{ site.baseurl }}{{ method.url }}">{{ method.title }}</a></li>
               {% endfor %}
-                <li><a href="{{site.baseurl}}/validate">See all Validate cards</a></li>
+                <li><a href="{{site.baseurl}}/prototype">See all Prototype cards</a></li>
             </ul>
           </li>
           <li>
@@ -87,11 +87,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span>Test</span>
             </button>
             <ul id="sidenav-5" class="usa-nav-submenu" aria-hidden="true">
-              {% assign fundamentalsmethods = fundamentals_methods | sort:"title"  %}
-              {% for method in fundamentalsmethods %}
+              {% assign testmethods = test_methods | sort:"title"  %}
+              {% for method in testmethods %}
                 <li><a href="{{ site.baseurl }}{{ method.url }}">{{ method.title }}</a></li>
               {% endfor %}
-                <li><a href="{{site.baseurl}}/fundamentals">See all Fundamentals cards</a></li>
+                <li><a href="{{site.baseurl}}/test">See all Test cards</a></li>
             </ul>
           </li>
           <li>

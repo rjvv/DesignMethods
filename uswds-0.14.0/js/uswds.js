@@ -1015,10 +1015,10 @@ module.exports = function validator (el) {
   var validatorCheckbox;
   var checkList = select(data.validationelement)[ 0 ];
 
-  function validate () {
+  function prototype () {
     for (key in data) {
-      if (key.startsWith('validate')) {
-        validatorName = key.split('validate')[ 1 ];
+      if (key.startsWith('prototype')) {
+        validatorName = key.split('prototype')[ 1 ];
         validatorPattern = new RegExp(data[ key ]);
         validatorSelector = '[data-validator=' + validatorName + ']';
         validatorCheckbox = select(validatorSelector, checkList)[ 0 ];
@@ -1029,7 +1029,7 @@ module.exports = function validator (el) {
     }
   }
 
-  dispatch(el, 'keyup', validate);
+  dispatch(el, 'keyup', prototype);
 };
 
 /**
@@ -1101,7 +1101,7 @@ var toggleFormInput = require('../components/toggle-form-input');
 whenDOMReady(function () {
   var elShowPassword = select('.usa-show_password')[ 0 ];
   var elFormInput = select('.usa-show_multipassword')[ 0 ];
-  var elValidator = select('.js-validate_password')[ 0 ];
+  var elValidator = select('.js-prototype_password')[ 0 ];
 
   elShowPassword && toggleFormInput(elShowPassword, 'Show Password', 'Hide Password');
   elFormInput && toggleFormInput(elFormInput, 'Show my typing', 'Hide my typing');
