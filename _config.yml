@@ -1,0 +1,47 @@
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+name: Methods
+exclude:
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- README.md
+- go
+- vendor
+
+permalink: pretty
+highlighter: rouge
+
+sass:
+  style: compressed
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  methods:
+    output: true
+    permalink: /:path/
+site:
+  title: Methods
+
+description: 18F’s method cards describe how our organization puts human-centered design into practice.
+
+repos:
+- name: Methods
+  description: Main repository
+  url: https://github.com/18F/methods
+
+jekyll_get:
+  - data: releases
+    json: 'https://api.github.com/repos/18F/methods/releases'
+
+plugins:
+  - jekyll-last-modified-at
+  - jemoji
+  - jekyll-mentions
+  - jekyll-redirect-from
+
+google_analytics_ua: UA-48605964-19
